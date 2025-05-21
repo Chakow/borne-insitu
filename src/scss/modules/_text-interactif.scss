@@ -1,0 +1,33 @@
+.text-interactif {
+  @font-face {
+    font-family: "Capraia";
+    src: url(../font/Capraia-Book.woff2) format("woff2"),
+      url(../font/Capraia-Book.woff) format("woff");
+  }
+}
+
+.title-box-container {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  z-index: 1000;
+  mix-blend-mode: screen;
+  opacity: 70%;
+  span {
+    display: inline-block;
+  }
+  h1 {
+    font-family: "Capraia";
+    font-size: 50px;
+    color: white;
+    margin-top: 15px;
+  }
+  .title-box {
+    height: 80px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
