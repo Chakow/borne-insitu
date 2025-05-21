@@ -4,6 +4,8 @@
     src: url(../font/Capraia-Book.woff2) format("woff2"),
       url(../font/Capraia-Book.woff) format("woff");
   }
+  opacity: 1;
+  transition: opacity 0.2s ease;
 }
 
 .title-box-container {
@@ -30,4 +32,7 @@
     flex-direction: column;
     gap: 8px;
   }
+}
+.text-interactif.hidden {
+  opacity: 0;
 }

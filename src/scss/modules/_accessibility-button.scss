@@ -1,10 +1,10 @@
 .accessibility-button {
-  position: absolute;
+  position: fixed;
   z-index: 1000;
-  bottom: 57px;
-  right: -20px;
+  bottom: 50px;
+  right: 50px;
 
   img {
-    width: 50%;
+    width: 80px;
   }
 }

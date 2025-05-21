@@ -1,6 +1,11 @@
 .all {
   opacity: 1;
   transition: opacity 1.5s ease;
+  height: 1920px;
+  width: 1080px;
+  overflow: hidden;
+  background-color: #3a07f2;
+  // position: fixed;
 }
 .all.hidden {
   opacity: 0;

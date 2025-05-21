@@ -1,4 +1,4 @@
-.degrade {
+.gradient {
   height: 100vh;
   svg {
     width: 100%;
@@ -11,7 +11,7 @@
     left: 10px;
     will-change: transform;
   }
-  .flou {
+  .blur {
     position: fixed;
     z-index: 998;
     height: 100vh;
@@ -20,7 +20,7 @@
     backdrop-filter: blur(50px);
     filter: saturate(1.1);
   }
-  .flou2 {
+  .blur2 {
     background-color: #3a07f2;
     opacity: 10%;
     position: fixed;

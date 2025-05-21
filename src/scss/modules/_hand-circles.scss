@@ -1,7 +1,8 @@
 .hand-circles {
   position: absolute;
   z-index: 1000;
-
+  inset: 0;
+  overflow: hidden;
   .screen {
     width: 1080px;
     height: 1920px;
@@ -9,6 +10,7 @@
   }
 
   .container {
+    transform: translateZ(0);
     display: flex;
     justify-content: center;
     align-items: center;
