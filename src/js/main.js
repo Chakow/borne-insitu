@@ -139,7 +139,6 @@ import gsap from "gsap";
 
 var hand = document.querySelector(".hand");
 var circlesWrapper = document.querySelector(".circles");
-var finalScreen = document.querySelector(".final-screen");
 
 function activeHand() {
   pulse.kill();
@@ -193,20 +192,6 @@ function activeHand() {
     },
     ">+=0.5"
   ); // start after a short pause
-
-  // Fade in PNG
-  tl.to(
-    ".final-screen",
-    {
-      opacity: 1,
-      duration: 1,
-      ease: "power2.inOut",
-      onStart: () => {
-        finalScreen.style.pointerEvents = "auto";
-      },
-    },
-    ">"
-  );
 }
 
 hand.addEventListener("click", activeHand);
@@ -233,4 +218,13 @@ document.body.addEventListener("keypress", function (event) {
       isFullScreen = false;
     }
   }
+});
+
+//disparition de ALL
+const all = document.querySelector(".all");
+
+hand.addEventListener("click", () => {
+  setTimeout(() => {
+    all.classList.add("hidden");
+  }, 2800); // Attend 1.6 secondes
 });
